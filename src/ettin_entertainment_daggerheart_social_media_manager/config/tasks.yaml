@@ -1,0 +1,108 @@
+---
+research_trending_daggerheart_topics:
+  description: Research current trending topics, discussions, and news related to
+    Daggerheart, tabletop RPGs, and the broader gaming community. Analyze what content
+    is performing well in the gaming space and identify opportunities for Ettin Entertainment
+    to join relevant conversations on {social_media_platforms}. Focus on recent developments,
+    community discussions, and viral gaming content.
+  expected_output: A comprehensive report of trending topics with specific content
+    angles, relevant hashtags, and conversation opportunities for Daggerheart content
+    across different social media platforms.
+  agent: social_media_content_strategist
+analyze_optimal_posting_times_and_engagement_patterns:
+  description: Research and analyze optimal posting times for gaming content across
+    {social_media_platforms}. Study engagement patterns in the tabletop RPG community,
+    identify when the target audience is most active, and determine the best scheduling
+    strategies for maximum reach and engagement. Include analysis of competitor posting
+    schedules and industry benchmarks.
+  expected_output: A comprehensive analytics report with specific optimal posting
+    times for each platform, audience activity patterns, engagement benchmarks, and
+    recommended posting frequency for Daggerheart content.
+  agent: social_media_analytics_specialist
+research_critical_role_and_darrington_press_release_schedule:
+  description: Conduct comprehensive research on Critical Role and Darrington Press's
+    upcoming release schedules, including the Dispatch video game, planned one-shots,
+    Daggerheart content, and any major announcements. Analyze their historical release
+    patterns, marketing campaign timelines, and identify specific windows where Ettin
+    Entertainment could strategically release {company_releases} to capitalize on
+    Critical Role's popularity and audience attention. Include research on their social
+    media announcement patterns, pre-release marketing timelines, and community engagement
+    strategies.
+  expected_output: A detailed competitive intelligence report with Critical Role's
+    confirmed and anticipated release schedule, optimal timing windows for Ettin Entertainment
+    releases, specific opportunities to create complementary content (like superhero
+    adventures timed with their releases), and strategic recommendations for piggybacking
+    on their marketing momentum.
+  agent: critical_role_competitive_intelligence_analyst
+create_community_engagement_strategy:
+  description: Develop a comprehensive community engagement strategy for Ettin Entertainment's
+    Daggerheart content. Research gaming communities on {social_media_platforms},
+    identify key influencers and community members, and create strategies for meaningful
+    interaction. Include response templates for different types of community interactions,
+    crisis management protocols, and methods to encourage user-generated content.
+  expected_output: A detailed community engagement playbook with specific strategies
+    for each platform, response templates, influencer engagement tactics, and community
+    building initiatives to foster a loyal Daggerheart fanbase.
+  agent: community_engagement_manager
+  context:
+  - research_trending_daggerheart_topics
+develop_strategic_release_timing_plan:
+  description: Based on Critical Role's research and trending topics analysis, create
+    a strategic timing plan for Ettin Entertainment's {company_releases} that maximizes
+    the benefit from Critical Role's marketing momentum. Develop specific recommendations
+    for when to announce, pre-market, and release content to capitalize on Critical
+    Role's audience attention. Include contingency plans for unexpected Critical Role
+    announcements and strategies for creating complementary content that enhances
+    rather than competes with their releases.
+  expected_output: A comprehensive strategic timing plan with specific release windows,
+    pre-marketing timelines, announcement schedules, and tactical recommendations
+    for leveraging Critical Role's popularity to boost Ettin Entertainment's market
+    presence and sales.
+  agent: social_media_analytics_specialist
+  context:
+  - research_critical_role_and_darrington_press_release_schedule
+  - research_trending_daggerheart_topics
+generate_content_ideas_and_posts:
+  description: Based on trending topics research, create specific social media content
+    ideas and draft posts for Ettin Entertainment's Daggerheart promotion. Develop
+    engaging captions, relevant hashtags, and platform-specific content variations
+    for {social_media_platforms}. Include different content types like promotional
+    posts, community questions, behind-the-scenes content, and user-generated content
+    campaigns.
+  expected_output: A detailed content calendar with 20-30 ready-to-publish social
+    media posts, including captions, hashtags, suggested visuals, and platform-specific
+    adaptations for optimal engagement.
+  agent: social_media_content_strategist
+  context:
+  - research_trending_daggerheart_topics
+  - research_critical_role_and_darrington_press_release_schedule
+develop_optimized_posting_schedule:
+  description: Using the analytics insights and content ideas, create an optimized
+    posting schedule for Ettin Entertainment's Daggerheart content across {social_media_platforms}.
+    Develop a content calendar that maximizes engagement by timing posts for optimal
+    audience activity, spacing content appropriately, and ensuring consistent brand
+    presence. Include contingency plans for trending topics and real-time engagement
+    opportunities.
+  expected_output: A complete 30-day social media calendar with specific posting times,
+    content assignments, platform optimizations, and automated scheduling recommendations
+    for maximum reach and engagement.
+  agent: content_scheduler_and_publisher
+  context:
+  - generate_content_ideas_and_posts
+  - analyze_optimal_posting_times_and_engagement_patterns
+create_social_media_management_action_plan:
+  description: Synthesize all research, content ideas, engagement strategies, and
+    scheduling recommendations into a comprehensive social media management action
+    plan for Ettin Entertainment. Include specific implementation steps, tool recommendations
+    for social media management platforms, metrics to track, and a rollout timeline.
+    Provide guidance on connecting to actual social media platforms and automation
+    tools.
+  expected_output: A complete social media management action plan with implementation
+    timeline, tool recommendations, content calendar, engagement strategies, analytics
+    framework, and step-by-step execution guide for promoting Daggerheart across social
+    media platforms.
+  agent: social_media_analytics_specialist
+  context:
+  - create_community_engagement_strategy
+  - develop_optimized_posting_schedule
+  - develop_strategic_release_timing_plan
